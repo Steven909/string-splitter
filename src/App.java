@@ -1,16 +1,25 @@
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
 
-        //Program that slits and prints a strting into individual charcaters. An upgrade reads a string from text file and splits indudual characters
-        String word = "Expensive";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter word > ");
+
+        String input = scanner.nextLine();
         StringBuilder stringBuilder = new StringBuilder();
+        scanner.close();
 
 
-        for (int i = 0; i < word.length(); i++) {
-            System.out.println(word.charAt(i));
+        for (int i = 0; i < input.length(); i++) {
+            System.out.println(input.charAt(i));
+
         }
 
 
     }
 }
+
+
+
